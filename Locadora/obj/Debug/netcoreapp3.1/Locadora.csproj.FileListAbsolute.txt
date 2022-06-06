@@ -1,0 +1,12 @@
+E:\Git Arquivos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.exe
+E:\Git Arquivos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.deps.json
+E:\Git Arquivos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.runtimeconfig.json
+E:\Git Arquivos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.runtimeconfig.dev.json
+E:\Git Arquivos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.dll
+E:\Git Arquivos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.pdb
+E:\Git Arquivos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.csproj.AssemblyReference.cache
+E:\Git Arquivos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git Arquivos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.csproj.CoreCompileInputs.cache
+E:\Git Arquivos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.dll
+E:\Git Arquivos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.pdb
+E:\Git Arquivos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.genruntimeconfig.cache
