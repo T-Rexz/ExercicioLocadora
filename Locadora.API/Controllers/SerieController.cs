@@ -33,5 +33,17 @@ namespace Locadora.API.Controllers
             Serie serieCriado = _gestaoServices.CadastrarSerie(serieRecebido);
             return Created("serie", serieRecebido);
         }
+
+        public List<Serie> ListarSeries()
+        {
+            // Armazenamento vai precisar colocar o
+            // using AulasPCDev.Respository;
+            // no inicio do código
+            // Ctrl + . é um atalho para adicionar esse using.
+
+            List<Serie> listaSeries =
+                Armazenamento.Series;
+            return listaSeries;
+        }
     }
 }

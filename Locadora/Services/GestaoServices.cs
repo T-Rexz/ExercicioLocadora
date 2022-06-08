@@ -40,7 +40,10 @@ namespace Locadora.Services
             //Console.WriteLine("Qual a duração do filme?");
             //filme.Duracao = int.Parse(Console.ReadLine());
         }
-
+        public List<Filme> ListarFilmes()
+        {
+            return Armazenamento.Filmes;
+        }
         public Serie CadastrarSerie(SerieViewModel serieRecebido)
         {
             Serie serie = new Serie();
@@ -61,6 +64,10 @@ namespace Locadora.Services
 
             //Console.WriteLine("Quantas temporadas tem esta série?");
             //serie.Temporadas = int.Parse(Console.ReadLine());
+        }
+        public List<Serie> ListarSeries()
+        {
+            return Armazenamento.Series;
         }
     }
 }

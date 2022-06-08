@@ -33,5 +33,17 @@ namespace Locadora.API.Controllers
             Filme filmeCriado = _gestaoServices.CadastrarFilme(filmeRecebido);
             return Created("filme", filmeRecebido);
         }
+
+        public List<Filme> ListarFilmes()
+        {
+            // Armazenamento vai precisar colocar o
+            // using AulasPCDev.Respository;
+            // no inicio do código
+            // Ctrl + . é um atalho para adicionar esse using.
+
+            List<Filme> listaFilmes =
+                Armazenamento.Filmes;
+            return listaFilmes;
+        }
     }
 }
