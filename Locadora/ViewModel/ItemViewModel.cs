@@ -6,11 +6,12 @@ namespace Locadora.ViewModel
 {
     public class ItemViewModel
     {
-        public string Titulo { get; set; }
+        // TESTANDO pra ver se aparece dps de pushado.
         public int Id { get; set; }
+        public string Titulo { get; set; }
+        public string Descricao { get; set; }
         public int Quantidade { get; set; }
         public int Valor { get; set; }
-        public string Descricao { get; set; }
-
+        
     }
 }

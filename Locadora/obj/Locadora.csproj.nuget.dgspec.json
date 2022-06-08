@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj": {}
+    "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\Locadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj": {
+    "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\Locadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj",
+        "projectUniqueName": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\Locadora.csproj",
         "projectName": "Locadora",
-        "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj",
+        "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\Locadora.csproj",
         "packagesPath": "C:\\Users\\UNILAGO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\obj\\",
+        "outputPath": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNILAGO\\AppData\\Roaming\\NuGet\\NuGet.Config",

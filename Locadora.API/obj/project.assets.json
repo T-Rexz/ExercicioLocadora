@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\Locadora.API.csproj",
+      "projectUniqueName": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora.API\\Locadora.API.csproj",
       "projectName": "Locadora.API",
-      "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\Locadora.API.csproj",
+      "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora.API\\Locadora.API.csproj",
       "packagesPath": "C:\\Users\\UNILAGO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\obj\\",
+      "outputPath": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\UNILAGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj": {
-              "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj"
+            "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\Locadora.csproj": {
+              "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora\\Locadora.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EI2DQpvsd0BBPMO9WvyKyYKWiYbzihT1S1QiIOUmCnFhpJ2NElJ4Bh1OaD5/gbFLG2ECRE6tXkwCAm9s3+fv2g==",
+  "dgSpecHash": "uR+SemKf1d+Px3kBfyAejM4KgQNE8tsTpjdvVihrZ9RkHbYxr8gkqMs0kP20QI36jOu13mcJsyoDOddm+rvFGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\Locadora.API.csproj",
+  "projectFilePath": "C:\\Users\\UNILAGO\\source\\repos\\NossaBelaLocadora\\Locadora.API\\Locadora.API.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
