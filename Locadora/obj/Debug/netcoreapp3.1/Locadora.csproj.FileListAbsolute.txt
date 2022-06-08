@@ -22,3 +22,15 @@ C:\Users\UNILAGO\source\repos\ExercicioLocadora\Locadora\obj\Debug\netcoreapp3.1
 C:\Users\UNILAGO\source\repos\ExercicioLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.dll
 C:\Users\UNILAGO\source\repos\ExercicioLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.pdb
 C:\Users\UNILAGO\source\repos\ExercicioLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.genruntimeconfig.cache
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.exe
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.deps.json
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.runtimeconfig.json
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.runtimeconfig.dev.json
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.dll
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\bin\Debug\netcoreapp3.1\Locadora.pdb
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.csproj.AssemblyReference.cache
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.csproj.CoreCompileInputs.cache
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.dll
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.pdb
+C:\Users\UNILAGO\source\repos\NossaBelaLocadora\Locadora\obj\Debug\netcoreapp3.1\Locadora.genruntimeconfig.cache

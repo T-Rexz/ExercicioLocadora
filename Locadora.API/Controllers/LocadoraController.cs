@@ -6,7 +6,7 @@ namespace Locadora.API.Controllers
     [Route("locadora")]
     public class LocadoraController : Controller
     {
-        [HttpGet]
+        [HttpGet] // GET da api/locadora
         public IActionResult Inicio()
         {
             return Ok("Teste");

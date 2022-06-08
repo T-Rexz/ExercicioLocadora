@@ -21,12 +21,6 @@ namespace Locadora.API.Controllers
                 Armazenamento.Biblioteca;
             return listaItens;
         }
-        //public List<Item> ListarSeries()
-        //{
-        //    List<Item> listaSerie =
-        //        Armazenamento.Biblioteca;
-        //    return listaSerie;
-        //}
 
         /*
          * https://localhost:5001/locadora

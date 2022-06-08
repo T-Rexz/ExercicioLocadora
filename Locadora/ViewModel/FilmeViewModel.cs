@@ -6,7 +6,7 @@ namespace Locadora.ViewModel
 {
     public class FilmeViewModel : ItemViewModel
     {
-        public int QuantidadeDeOscars { get; set; }
+        public int qtdOscars { get; set; }
         public int Duracao { get; set; }
     }
 }

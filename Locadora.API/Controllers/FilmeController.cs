@@ -14,7 +14,7 @@ namespace Locadora.API.Controllers
     {
         private GestaoServices _gestaoServices = new GestaoServices();
 
-        [HttpPost]
+        [HttpPost] // POST da api/filme
         public ActionResult CadastrarFilme(
             [FromBody] FilmeViewModel filmeRecebido)
         {
@@ -23,24 +23,15 @@ namespace Locadora.API.Controllers
                 return BadRequest("Não foi recebido nenhum filme.");
             }
 
+            int oscarFilme = filmeRecebido.qtdOscars;
             string nomeFilme = filmeRecebido.Titulo;
             if (string.IsNullOrEmpty(nomeFilme))
             {
                 return BadRequest("Nome do filme não informado.");
             }
 
-            //int oscarFilme = oscarRecebido.QuantidadeDeOscars;
             Filme filmeCriado = _gestaoServices.CadastrarFilme(filmeRecebido);
             return Created("filme", filmeRecebido);
         }
-
-        //private GestaoServices _filmeServices = new GestaoServices();
-        //[HttpPost]
-        //public ActionResult CadastrarFilmes(
-        //    [FromBody] FilmeViewModel filmeRecebido)
-        //{
-        //    string nomeDoFilme = filmeRecebido.Titulo;
-        //}
-
     }
 }

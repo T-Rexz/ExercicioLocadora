@@ -14,7 +14,7 @@ namespace Locadora.API.Controllers
     {
         private GestaoServices _gestaoServices = new GestaoServices();
 
-        [HttpPost]
+        [HttpPost] // POST da api/serie
         public ActionResult CadastrarSerie(
             [FromBody] SerieViewModel serieRecebido)
         {
@@ -23,13 +23,13 @@ namespace Locadora.API.Controllers
                 return BadRequest("Não foi recebido nenhumaa série.");
             }
 
+            int tempSerie = serieRecebido.Temporadas;
             string nomeSerie = serieRecebido.Titulo;
             if (string.IsNullOrEmpty(nomeSerie))
             {
                 return BadRequest("Nome da série não informado.");
             }
 
-            //int temporadaSerie = temporadaRecebido.Temporadas;
             Serie serieCriado = _gestaoServices.CadastrarSerie(serieRecebido);
             return Created("serie", serieRecebido);
         }
