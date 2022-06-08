@@ -13,6 +13,15 @@ namespace Locadora.Services
         public List<Item> _biblioteca = Armazenamento.Biblioteca;
         // tirei void
 
+        public List<object> ListarItens()
+        {
+            List<object> lista = new List<object>();
+
+            //lista.AddRange(_series);
+            //lista.AddRange(_filmes);
+            return lista;
+        }
+
         public void Filme(FilmeViewModel filmeBase)
         {
             string filmeTitulo = filmeBase.Titulo;
