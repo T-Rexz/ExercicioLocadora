@@ -15,18 +15,18 @@ namespace Locadora.API.Controllers
         //private GestaoServices _gestaoServices = new GestaoServices();
 
         [HttpGet]
-        public List<Item> ListarFilmes()
+        public List<Item> Listar()
         {
-            List<Item> listaFilme =
+            List<Item> listaItens =
                 Armazenamento.Biblioteca;
-            return listaFilme;
+            return listaItens;
         }
-        public List<Item> ListarSeries()
-        {
-            List<Item> listaSerie =
-                Armazenamento.Biblioteca;
-            return listaSerie;
-        }
+        //public List<Item> ListarSeries()
+        //{
+        //    List<Item> listaSerie =
+        //        Armazenamento.Biblioteca;
+        //    return listaSerie;
+        //}
 
         /*
          * https://localhost:5001/locadora

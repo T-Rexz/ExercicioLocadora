@@ -15,7 +15,8 @@ namespace Locadora.API.Controllers
         private GestaoServices _gestaoServices = new GestaoServices();
 
         [HttpPost]
-        public ActionResult CadastrarFilme([FromBody] FilmeViewModel filmeRecebido)
+        public ActionResult CadastrarFilme(
+            [FromBody] FilmeViewModel filmeRecebido)
         {
             if (filmeRecebido == null)
             {
@@ -29,7 +30,7 @@ namespace Locadora.API.Controllers
             }
 
             //int oscarFilme = oscarRecebido.QuantidadeDeOscars;
-            //Filme filmeCriado = _gestaoServices.CadastrarFilmes(filmeRecebido);
+            Filme filmeCriado = _gestaoServices.CadastrarFilme(filmeRecebido);
             return Created("filme", filmeRecebido);
         }
 

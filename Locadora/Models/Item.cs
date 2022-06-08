@@ -1,4 +1,5 @@
 ﻿using Locadora.Respository;
+using Locadora.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Text;

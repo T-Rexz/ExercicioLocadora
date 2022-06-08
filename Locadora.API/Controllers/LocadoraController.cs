@@ -7,9 +7,9 @@ namespace Locadora.API.Controllers
     public class LocadoraController : Controller
     {
         [HttpGet]
-        public string Inicio()
+        public IActionResult Inicio()
         {
-            return "Teste";
+            return Ok("Teste");
         }
     }
 }

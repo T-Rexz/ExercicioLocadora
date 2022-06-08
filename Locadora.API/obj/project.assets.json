@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\T-Rex\\.nuget\\packages\\": {}
+    "C:\\Users\\UNILAGO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Git Arquivos\\NossaBelaLocadora\\Locadora.API\\Locadora.API.csproj",
+      "projectUniqueName": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\Locadora.API.csproj",
       "projectName": "Locadora.API",
-      "projectPath": "E:\\Git Arquivos\\NossaBelaLocadora\\Locadora.API\\Locadora.API.csproj",
-      "packagesPath": "C:\\Users\\T-Rex\\.nuget\\packages\\",
-      "outputPath": "E:\\Git Arquivos\\NossaBelaLocadora\\Locadora.API\\obj\\",
+      "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\Locadora.API.csproj",
+      "packagesPath": "C:\\Users\\UNILAGO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\T-Rex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\UNILAGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Git Arquivos\\NossaBelaLocadora\\Locadora\\Locadora.csproj": {
-              "projectPath": "E:\\Git Arquivos\\NossaBelaLocadora\\Locadora\\Locadora.csproj"
+            "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj": {
+              "projectPath": "C:\\Users\\UNILAGO\\source\\repos\\ExercicioLocadora\\Locadora\\Locadora.csproj"
             }
           }
         }

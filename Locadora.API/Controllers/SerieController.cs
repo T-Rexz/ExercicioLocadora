@@ -15,9 +15,22 @@ namespace Locadora.API.Controllers
         private GestaoServices _gestaoServices = new GestaoServices();
 
         [HttpPost]
-        public ActionResult CadastrarSerie([FromBody] SerieViewModel serieRecebido)
+        public ActionResult CadastrarSerie(
+            [FromBody] SerieViewModel serieRecebido)
         {
+            if (serieRecebido == null)
+            {
+                return BadRequest("Não foi recebido nenhumaa série.");
+            }
+
             string nomeSerie = serieRecebido.Titulo;
+            if (string.IsNullOrEmpty(nomeSerie))
+            {
+                return BadRequest("Nome da série não informado.");
+            }
+
+            //int temporadaSerie = temporadaRecebido.Temporadas;
+            Serie serieCriado = _gestaoServices.CadastrarSerie(serieRecebido);
             return Created("serie", serieRecebido);
         }
     }
