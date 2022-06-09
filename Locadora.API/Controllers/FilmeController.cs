@@ -1,6 +1,6 @@
 ﻿using Locadora.API.Services;
 using Locadora.Models;
-using Locadora.Respository;
+using Locadora.Repository;
 using Locadora.Services;
 using Locadora.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace Locadora.API.Controllers
 {
     [ApiController]
-    [Route("filme")]
+    [Route("filme")] // Alterado api/filme para filme
     public class FilmeController : BibliotecaController
     {
         private GestaoServices _gestaoServices = new GestaoServices();
@@ -20,10 +20,10 @@ namespace Locadora.API.Controllers
         {
             if (filmeRecebido == null)
             {
-                return BadRequest("Não foi recebido nenhum filme.");
+                return BadRequest("Nenhum cadastro de filme, faça o cadastro do filme.");
             }
 
-            int oscarFilme = filmeRecebido.qtdOscars;
+            int oscarFilme = filmeRecebido.QtdOscars;
             string nomeFilme = filmeRecebido.Titulo;
             if (string.IsNullOrEmpty(nomeFilme))
             {
@@ -31,19 +31,7 @@ namespace Locadora.API.Controllers
             }
 
             Filme filmeCriado = _gestaoServices.CadastrarFilme(filmeRecebido);
-            return Created("filme", filmeRecebido);
-        }
-
-        public List<Filme> ListarFilmes()
-        {
-            // Armazenamento vai precisar colocar o
-            // using AulasPCDev.Respository;
-            // no inicio do código
-            // Ctrl + . é um atalho para adicionar esse using.
-
-            List<Filme> listaFilmes =
-                Armazenamento.Filmes;
-            return listaFilmes;
+            return Created("filme", filmeRecebido); // vai retornar status 201
         }
     }
 }

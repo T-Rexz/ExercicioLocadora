@@ -1,4 +1,4 @@
-﻿using Locadora.Respository;
+﻿using Locadora.Repository;
 using Locadora.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,8 @@ namespace Locadora.Models
 {
     public class Item
     {
-        public int Id { get; set; }
+        // Gera ID para os itens (filmes e séries)
+        public Guid Id { get; set; }
         public int Quantidade { get; set; }
         public int Valor { get; set; }
         public string Titulo { get; set; }
@@ -21,9 +22,7 @@ namespace Locadora.Models
             // pegar a quantidade de itens
             // fazer um incremento na quantidade de itens da minha biblioteca
 
-            List<Item> itens = Armazenamento.Biblioteca;
-            int quantidadeDeItens = 1000 + itens.Count;
-            Id = quantidadeDeItens++;
+            Id = Guid.NewGuid();
         }
     }
 }

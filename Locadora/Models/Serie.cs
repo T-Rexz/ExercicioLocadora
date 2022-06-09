@@ -7,7 +7,16 @@ namespace Locadora.Models
 {
     public class Serie : Item
     {
+        //public Guid IdSerie { set; get; }
         public int Temporadas { get; set; }
         public int Emmies { get; set; }
+
+        private SerieViewModel serieRecebido;
+
+        public Serie (SerieViewModel serieRecebido)
+        {
+            Temporadas = serieRecebido.Temporadas;
+            Emmies = serieRecebido.Emmies;
+        }
     }
 }

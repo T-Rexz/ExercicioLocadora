@@ -1,6 +1,6 @@
 ﻿using Locadora.API.Services;
 using Locadora.Models;
-using Locadora.Respository;
+using Locadora.Repository;
 using Locadora.Services;
 using Locadora.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -12,14 +12,13 @@ namespace Locadora.API.Controllers
     [Route("biblioteca")]
     public class BibliotecaController : ControllerBase
     {
-        //private GestaoServices _gestaoServices = new GestaoServices();
+        private GestaoServices _gestaoServices = new GestaoServices();
 
         [HttpGet]
-        public List<Item> Listar()
+        public IActionResult ObterBiblioteca()
         {
-            List<Item> listaItens =
-                Armazenamento.Biblioteca;
-            return listaItens;
+            List<object> listaItem = _gestaoServices.ListarItens();
+            return Ok(listaItem);
         }
 
         /*

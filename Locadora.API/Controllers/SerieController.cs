@@ -1,6 +1,6 @@
 ﻿using Locadora.API.Services;
 using Locadora.Models;
-using Locadora.Respository;
+using Locadora.Repository;
 using Locadora.Services;
 using Locadora.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +9,14 @@ using System.Collections.Generic;
 namespace Locadora.API.Controllers
 {
     [ApiController]
-    [Route("serie")]
+    [Route("serie")] // Alterado api/serie para serie
     public class SerieController : BibliotecaController
     {
-        private GestaoServices _gestaoServices = new GestaoServices();
+        private GestaoServices _gestaoServices;
+        public SerieController()
+        {
+            _gestaoServices = new GestaoServices();
+        }
 
         [HttpPost] // POST da api/serie
         public ActionResult CadastrarSerie(
@@ -20,7 +24,7 @@ namespace Locadora.API.Controllers
         {
             if (serieRecebido == null)
             {
-                return BadRequest("Não foi recebido nenhumaa série.");
+                return BadRequest("Nenhuma série cadastrada. Faça o cadastro de uma série.");
             }
 
             int tempSerie = serieRecebido.Temporadas;
@@ -30,7 +34,7 @@ namespace Locadora.API.Controllers
                 return BadRequest("Nome da série não informado.");
             }
 
-            Serie serieCriado = _gestaoServices.CadastrarSerie(serieRecebido);
+            _gestaoServices.CadastrarSerie(serieRecebido);
             return Created("serie", serieRecebido);
         }
 

@@ -1,6 +1,6 @@
 ﻿using Locadora.API.Services;
 using Locadora.Models;
-using Locadora.Respository;
+using Locadora.Repository;
 using Locadora.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,25 +19,26 @@ namespace Locadora.API.Controllers
         public ActionResult CadastrarUsuario(
             [FromBody] UsuarioViewModel usuarioRecebido)
         {
+            string nomeDoUsuario = usuarioRecebido.Nome;
+            int idadeDoUsuario = usuarioRecebido.Idade;
+
             if (usuarioRecebido == null)
             {
                 return BadRequest("Não foi recebido nenhum usuário.");
             }
             
-            string nomeDoUsuario = usuarioRecebido.Nome;
             if (string.IsNullOrEmpty(nomeDoUsuario))
             {
-                return BadRequest("Nome de usuário não informado");
+                return BadRequest("Nome de usuário não informado.");
             }
-            
-            if (usuarioRecebido.Idade < 18)
+
+            if (idadeDoUsuario < 18)
             {
-                return BadRequest("Não é permitido o cadastro de usuário.");
+                return BadRequest("Não é permitido o cadastro de pessoas com menores de 18 anos.");
             }
-            // Garantir que o serviço vai receber o objeto
-            // apropriado, como assim? Já explico!
+
             Usuario objetoCriado = _usuarioServices.CadastrarUsuario(usuarioRecebido);
-            return Created("usuarios", usuarioRecebido);
+            return Created("usuarios", objetoCriado);
         }
 
         [HttpGet]
@@ -49,8 +50,19 @@ namespace Locadora.API.Controllers
             // Ctrl + . é um atalho para adicionar esse using.
 
             List<Usuario> listaUsuario =
-                Armazenamento.Usuarios;
+                _usuarioServices.ListarUsuarios();
             return listaUsuario;
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult ObterUsuario(string id)
+        {
+            Usuario usuario = _usuarioServices.ObterUsuario(id);
+            if(usuario == null)
+            {
+                return NotFound();
+            }
+            return Ok(usuario);
         }
     }
 }

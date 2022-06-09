@@ -3,10 +3,10 @@
 namespace Locadora.API.Controllers
 {
     [ApiController]
-    [Route("locadora")]
+    [Route("locadora")] // Alterado de api/locadora para locadora (caminho de URL mais curta)
     public class LocadoraController : Controller
     {
-        [HttpGet] // GET da api/locadora
+        [HttpGet]
         public IActionResult Inicio()
         {
             return Ok("Teste");
