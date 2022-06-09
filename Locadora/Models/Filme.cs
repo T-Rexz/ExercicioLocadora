@@ -9,5 +9,12 @@ namespace Locadora.Models
     {
         public int Duracao { get; set; }
         public int QuantidadeDeOscars { get; set; }
+        public Guid IdFilme { get; set; } // GUID serve para criar ID
+
+        public Filme (FilmeViewModel filmeRecebido)
+        {
+            Duracao = filmeRecebido.Duracao;
+            QuantidadeDeOscars = filmeRecebido.qtdOscars;
+        }
     }
 }

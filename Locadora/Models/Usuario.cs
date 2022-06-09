@@ -9,6 +9,11 @@ namespace Locadora.Models
     {
         private readonly static int IDADE_MAIORIDADE = 18;
 
+        public int Idade { get; set; }
+        public string Nome { get; set; }
+        public Conta Conta { get; set; }
+        public Guid IdUsuario { get; set; } // GUID é para criar ID
+
         public Usuario(UsuarioViewModel usuarioBase)
         {
             Nome = usuarioBase.Nome;            
@@ -22,12 +27,5 @@ namespace Locadora.Models
                 throw new Exception();
             }
         }
-
-        public int Idade { get; set; }
-
-        public string Nome { get; set; }
-
-        public Conta Conta { get; set; }
-
     }
 }
