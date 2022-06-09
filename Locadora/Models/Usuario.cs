@@ -16,6 +16,7 @@ namespace Locadora.Models
         public int Idade { get; set; }
 
         public Conta Conta { get; set; }
+        public Guid IdUsuario { get; set; } // GUID é para criar ID
 
         public Usuario(UsuarioViewModel usuarioBase)
         {

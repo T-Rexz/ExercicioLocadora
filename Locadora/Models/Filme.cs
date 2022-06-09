@@ -12,6 +12,7 @@ namespace Locadora.Models
         public int qtdOscars { get; set; }
 
         private FilmeViewModel filmeRecebido;
+        public Guid IdFilme { get; set; } // GUID serve para criar ID
 
         public Filme (FilmeViewModel filmeRecebido)
         {

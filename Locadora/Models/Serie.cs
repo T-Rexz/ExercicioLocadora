@@ -12,6 +12,7 @@ namespace Locadora.Models
         public int Emmies { get; set; }
 
         private SerieViewModel serieRecebido;
+        public Guid IdSerie { get; set; }
 
         public Serie (SerieViewModel serieRecebido)
         {
