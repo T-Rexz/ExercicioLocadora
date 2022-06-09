@@ -7,13 +7,11 @@ namespace Locadora.Models
 {
     public class Filme : Item
     {
-        //public Guid IdFilme { get; set; }
+        public Guid IdFilme { get; set; } // GUID serve para criar ID de filme
         public int Duracao { get; set; }
         public int qtdOscars { get; set; }
 
         private FilmeViewModel filmeRecebido;
-        public Guid IdFilme { get; set; } // GUID serve para criar ID
-
         public Filme (FilmeViewModel filmeRecebido)
         {
             Duracao = filmeRecebido.Duracao;

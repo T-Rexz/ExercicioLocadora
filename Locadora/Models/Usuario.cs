@@ -9,14 +9,13 @@ namespace Locadora.Models
     {
         private readonly static int IDADE_MAIORIDADE = 18;
 
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } // GUID é para criar ID
 
         public string Nome { get; set; }
 
         public int Idade { get; set; }
 
         public Conta Conta { get; set; }
-        public Guid IdUsuario { get; set; } // GUID é para criar ID
 
         public Usuario(UsuarioViewModel usuarioBase)
         {
