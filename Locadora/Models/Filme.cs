@@ -16,6 +16,7 @@ namespace Locadora.Models
         {
             Duracao = filmeRecebido.Duracao;
             qtdOscars = filmeRecebido.QtdOscars;
+            IdFilme = Guid.NewGuid();
         }
     }
 }

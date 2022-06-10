@@ -16,6 +16,7 @@ namespace Locadora.Models
         {
             Temporadas = serieRecebido.Temporadas;
             Emmies = serieRecebido.Emmies;
+            IdSerie = Guid.NewGuid();
         }
     }
 }

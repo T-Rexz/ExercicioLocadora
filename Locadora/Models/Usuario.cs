@@ -9,7 +9,7 @@ namespace Locadora.Models
     {
         private readonly static int IDADE_MAIORIDADE = 18;
 
-        public Guid Id { get; set; } // GUID é para criar ID
+        public Guid IdUsuario { get; set; } // GUID é para criar ID
 
         public string Nome { get; set; }
 
@@ -30,7 +30,7 @@ namespace Locadora.Models
                 throw new Exception();
             }
             Nome = usuarioBase.Nome;
-            Id = Guid.NewGuid();
+            IdUsuario = Guid.NewGuid();
         }
     }
 }

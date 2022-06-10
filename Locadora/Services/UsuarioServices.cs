@@ -30,10 +30,10 @@ namespace Locadora.API.Services
         public Usuario ObterUsuario(string idRecebido)
         {
             List<Usuario> listaUsuario = ListarUsuarios();
-            if (listaUsuario.Any(u => u.Id.ToString() == idRecebido))
+            if (listaUsuario.Any(u => u.IdUsuario.ToString() == idRecebido))
             {
                 Usuario usuario = listaUsuario
-                   .Where(u => u.Id.ToString() == idRecebido)
+                   .Where(u => u.IdUsuario.ToString() == idRecebido)
                    .First();
                 return usuario;
             }

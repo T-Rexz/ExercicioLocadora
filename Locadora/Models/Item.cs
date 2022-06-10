@@ -8,7 +8,7 @@ namespace Locadora.Models
 {
     public class Item
     {
-        public Guid Id { get; set; } // Gera ID para os itens (filmes e séries)
+        public Guid IdItem { get; set; } // Gera ID para os itens (filmes e séries)
         public int Quantidade { get; set; }
         public int Valor { get; set; }
         public string Titulo { get; set; }
@@ -21,7 +21,7 @@ namespace Locadora.Models
             // pegar a quantidade de itens
             // fazer um incremento na quantidade de itens da minha biblioteca
 
-            Id = Guid.NewGuid();
+            IdItem = Guid.NewGuid();
         }
     }
 }

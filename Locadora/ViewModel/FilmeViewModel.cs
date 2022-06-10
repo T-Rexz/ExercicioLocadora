@@ -6,7 +6,8 @@ namespace Locadora.ViewModel
 {
     public class FilmeViewModel
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
+        public Guid IdFilme { get; set; }
         public string Titulo { get; set; }
         public string Descricao { get; set; }
         public int Duracao { get; set; }
